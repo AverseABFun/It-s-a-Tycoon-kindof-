@@ -31,7 +31,7 @@ function change_page_wrapper(page) {
         new Number(
           document.querySelector(document.location.hash).style.opacity
         ) - 0.1;
-      if (document.querySelector(document.location.hash).style.opacity == 0) {
+      if (document.querySelector(document.location.hash).style.opacity <= 0) {
         clearTimeout(timeout);
         document.querySelector(document.location.hash).style.display = 'none';
         document.location.hash = page;
@@ -51,7 +51,7 @@ for (var i in buttons_change) {
   var item = buttons_change[i];
   if (!item.disabled) {
     if (!document.getElementById(item.dataset.toPage)) {
-      console.log(
+      console.warn(
         `DANGLING BUTTON!!!! It tries to lead to ${item.dataset.toPage}!`
       );
     }
