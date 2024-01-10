@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+recipe {
+    display: block;
+    width: 450px;
+    font-family: 'Seaweed Script', cursive;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+journal-entry {
+    font-family: 'Shadows Into Light', cursive;
+}
+journal-entry>i {
+    font-family: 'Shadows Into Light', cursive;
+}
+a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+a.active {
+    font-style: italic;
+}
+a:hover {
+    cursor: pointer;
+}
+a.active:hover {
+    cursor: default;
+}
+
+nav {
+    display: inline;
+}
+.page {
+    opacity: 0;
+    display: none;
+}
